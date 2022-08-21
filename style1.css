@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");  
+ @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500');  
+ html {  
+      box-sizing: border-box; 
+      height: 100%; 
+ }  
+ *,  
+ *:before,  
+ *:after {  
+      box-sizing: inherit;  
+ }  
+ * {  
+      margin: 0;  
+      padding: 0;  
+ }  /* * selector  means entire content of the html element   */
+ body {  
+    background:linear-gradient(rgb(236, 95, 119),rgb(31, 31, 14)); 
+    color: #fff;  
+    font-family: "Roboto", sans-serif;  
+    height: 100%;
+}  
+header
+{
+    background-color: #fff;
+    padding:10px;
+}
+header h1 {  
+    color:#000;
+    text-align: center;  
+    font-weight: bold;  
+    font-style: italic;
+    background:
+    linear-gradient(to right,
+        #f00a57,
+        #334efc);
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        /* Set the color of the text
+            to transparent  */
+        color: transparent;
+    
+}  
+.score-board
+{
+    border: 4px solid #fff;  
+    width: 300px;  
+    margin: 40px auto;  
+    font-size: 40px;  
+    border-radius: 5px;  
+    text-align: center;  
+    padding: 15px 20px;  
+    position: relative;  
+
+}
+.badge
+{
+    background: #3d10e1;  
+    text-transform: uppercase;  
+    font-size: 14px;  
+    padding: 10px 6px;  
+
+}
+#user-label {  
+    position: absolute;  
+    top: 50%;  
+    left: -5%;  
+    transform: translate(-10%, -50%);  
+    box-shadow:1px 2px 1px white;
+}  
+#computer-label {  
+    position: absolute;  
+    top: 50%;  
+    right: -5%;  
+    transform: translate(10%, -50%);   /* move the element to the right position we set on the -50% becuse the label set onthe center of the badge */ 
+    box-shadow:1px 2px 1px white;
+
+}
+.result
+{
+      text-align: center;
+      font-weight: 300;  
+      font-size:35px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      line-height: 40px;
+      padding:30px;
+      text-shadow: 2px 2px 2px #000;
+}
+.choices {  
+    margin: 0 auto;  
+    text-align: center;  
+    padding: 60px 0;  
+}  
+.choice {  
+    display: inline-block;  
+    border: 3px solid #fff;  
+    border-radius: 50%;  
+    padding: 10px;  
+    margin: auto 10px;  
+    transition: all 0.3s ease;  
+}  
+.choice img {  
+    filter: invert(100%);  
+}
+#action-message {  
+    text-align: center;  
+    font-weight: 500;  
+    text-transform: uppercase;  
+    font-size: 30px;
+    letter-spacing: 2px;  
+    padding:10px;
+    margin: 40px 0;  
+    text-shadow: 2px 2px 2px black;
+}  
